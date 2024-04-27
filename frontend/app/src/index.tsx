@@ -9,13 +9,16 @@ import Message from './components/Message';
 import Parent from './components/ContainerSample';
 import ContextSample from './components/ContextSample';
 import Counter from './components/Counter';
+import { ParentFizzBuzz } from './components/Parent';
+import { ParentUseCallback } from './components/UseCallbackSample';
+import { Clock } from './components/Clock';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Counter initialValue={0} />
+    <Clock />
   </React.StrictMode>
 );
 
